@@ -429,6 +429,11 @@ hr {
         width: 39vw;
         padding: 1em;
     }
+    body.mobile .carousel-abs-container {
+        position: relative;
+        width: auto;
+        right: 0;
+    }
 }
 
 /************flickity*/
@@ -459,7 +464,8 @@ hr {
 
 @media all and (max-width: 768px) {
     .carousel-cell {
-        height: 80vh;
+        /* height: 80vh; */
+        height: auto;
     }
 }
 
