@@ -224,21 +224,21 @@ nav.standard li a {
 
 .sidenav div#nav-main-slider {
     min-width: 200px;
-    top: 0;
+    /* top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    /* justify-content: space-between;
+    align-items: flex-start; */
     background: var(--color-bg);
-    padding: 5em 0em 5em 1em;
+    padding: 5em 1em 0em 1em;
     opacity: 0;
     -webkit-transition: opacity 1s ease;
     transition: opacity 1s ease;
-    max-height: calc(100% - 10em);
-    overflow: auto;
+    /* max-height: calc(100% - 10em);
+    overflow: auto; */
 }
 
 .sidenav a {
