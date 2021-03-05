@@ -168,6 +168,7 @@ nav.standard {
     left: 0;
     position: fixed;
     height: 100%;
+    width: auto;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
