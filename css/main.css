@@ -460,7 +460,7 @@ hr {
 
 /************flickity*/
 .carousel-abs-container {
-    min-height: 75vh;
+    min-height: 50vh;
 }
 
 .carousel {
