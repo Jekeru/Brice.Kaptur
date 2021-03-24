@@ -348,7 +348,8 @@ body.desktop #fixed-arrayslide a:nth-of-type(3) {
 body.mobile.fp-viewing-head #fixed-arrayslide a:nth-last-of-type(n+2),
 body.mobile.fp-viewing-video #fixed-arrayslide a:nth-last-of-type(n+2),
 body.mobile.fp-viewing-footer #fixed-arrayslide a:nth-last-of-type(n+2),
-body.desktop.fp-viewing-footer #fixed-arrayslide a:nth-of-type(3) {
+body.desktop.fp-viewing-footer #fixed-arrayslide a:nth-of-type(3),
+body.mobile.fp-viewing-footer #fixed-arrayslide a:nth-of-type(3) {
     -webkit-transform: scale(0);
     transform: scale(0);
 }
