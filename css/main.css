@@ -199,9 +199,18 @@ nav.standard li a {
     }
 }
 
+@media all and (max-width: 768px) {
+    #Brice-K-title {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+}
+
+
 @media all and (min-width: 769px) {
     #Brice-K-title span {
         display: flex;
+        line-height: 1.15;
     }
 }
 
@@ -224,7 +233,7 @@ nav.standard li a {
 }
 
 .sidenav div#nav-main-slider {
-    min-width: 200px;
+    min-width: 225px;
     /* top: 0;
     right: 0;
     left: 0;
@@ -253,8 +262,13 @@ nav.standard li a {
 
 .sidenav a.active,
 .sidenav a:hover {
-    color: var(--color-social-hover);
+    color: darkblue;
     padding-left: 10px;
+}
+
+.sidenav a.active:nth-of-type(1) {
+    padding-left: 0px;
+    color: inherit;
 }
 
 .sidenav .closebtn {
@@ -402,6 +416,12 @@ footer {
     padding: 1em;
 }
 
+footer a {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
 /* Custom CSS hr
  * --------------------------------------- */
 hr {
@@ -430,6 +450,7 @@ hr {
         width: 39vw;
         padding: 1em;
     }
+
     body.mobile .carousel-abs-container {
         position: relative;
         width: auto;
@@ -467,6 +488,11 @@ hr {
     .carousel-cell {
         /* height: 80vh; */
         height: auto;
+    }
+
+    .carousel-cell-image.logo {
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
 }
 
@@ -507,6 +533,17 @@ hr {
     background: var(--color-bg);
 }
 
+/* fade in image when loaded */
+.carousel-cell-image {
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+}
+
 /* Custom CSS linkshover
  * --------------------------------------- */
 .link-hover a,
@@ -530,7 +567,8 @@ hr {
     bottom: 0;
 }
 
-.navigation h4, #nav-main-slider .navigation h4 span {
+.navigation h4,
+#nav-main-slider .navigation h4 span {
     -webkit-transition: all 0.15s ease-in-out 0s;
     transition: all 0.15s ease-in-out 0s;
 }
@@ -560,4 +598,7 @@ hr {
     transform: scaleX(1);
 }
 
-#nav-main-slider .navigation.active h4 span {opacity: 0;visibility: hidden;}
+#nav-main-slider .navigation.active h4 span {
+    opacity: 0;
+    visibility: hidden;
+}
